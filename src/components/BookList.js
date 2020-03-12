@@ -6,7 +6,7 @@ import BookDetails from "./BookDetails";
 
 const BookList = props => {
   const { loading, error, data } = useQuery(getBooksQuery);
-  const [state, setState] = useState("");
+  const [state, setState] = useState(null);
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
 

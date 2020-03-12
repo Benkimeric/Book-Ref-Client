@@ -44,7 +44,7 @@ const AddBookList = props => {
 
   return (
     <div>
-      <form id="add-book" onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <div className="field">
           <label>Book name:</label>
           <input id="name" onChange={handleChange} type="text" />
