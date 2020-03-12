@@ -8,11 +8,10 @@ const BookDetails = props => {
     variables: { id: props.bookId }
   });
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error :(</p>;
+  if (loading) return <p id="book-details">Loading...</p>;
+  if (error) return <p id="book-details">Error :(</p>;
 
   const { book } = data;
-  console.log("data", book);
   const displayBook = () => {
     if (book) {
       return (
